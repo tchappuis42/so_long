@@ -6,7 +6,7 @@
 /*   By: tchappui <tchappui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 16:59:19 by tchappui          #+#    #+#             */
-/*   Updated: 2022/02/18 15:24:13 by tchappui         ###   ########.fr       */
+/*   Updated: 2022/02/28 13:44:43 by tchappui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,6 @@ void	ft_makemap(t_data *data)
 	while (t != NULL)
 	{
 		data->m.map[y] = calloc(strlen(t) + 1, sizeof (char));
-		if (!data->m.map[y])
-			ft_printf("ERREUR\n");
 		while (t[x] != '\0' && t[x] != '\n')
 		{
 			data->m.map[y][x] = t[x];
@@ -72,8 +70,6 @@ void	ft_map(t_data *data, char *map)
 {
 	data->m.win_height = ft_mapheight(map);
 	data->m.map = calloc(data->m.win_height + 1, sizeof (char *));
-	if (!data->m.map)
-		return ;
 	data->m.map[data->m.win_height] = 0;
 	data->m.fd = open(map, O_RDONLY);
 	if (data->m.fd < 0)

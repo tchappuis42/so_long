@@ -6,7 +6,7 @@
 /*   By: tchappui <tchappui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 14:11:24 by tchappui          #+#    #+#             */
-/*   Updated: 2022/02/18 15:31:02 by tchappui         ###   ########.fr       */
+/*   Updated: 2022/02/28 14:23:56 by tchappui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_freemap(t_data *data)
 {
-	while(data->m.win_height >= 0)
+	while (data->m.win_height >= 0)
 	{
 		free(data->m.map[data->m.win_height]);
 		data->m.win_height--;
@@ -25,7 +25,7 @@ void	ft_freemap(t_data *data)
 
 int	ft_destroyimg(t_data *data)
 {
-	while(data->m.win_height >= 0)
+	while (data->m.win_height >= 0)
 	{
 		free(data->m.map[data->m.win_height]);
 		data->m.win_height--;
@@ -36,8 +36,8 @@ int	ft_destroyimg(t_data *data)
 	return (0);
 }
 
-void	ft_errorfd()
+void	ft_errorfd(void)
 {
-	printf("ERROR\n fd");
+	printf("ERROR\n probleme de fichier");
 	exit(0);
 }

@@ -6,7 +6,7 @@
 /*   By: tchappui <tchappui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 15:51:05 by tchappui          #+#    #+#             */
-/*   Updated: 2022/02/18 15:29:09 by tchappui         ###   ########.fr       */
+/*   Updated: 2022/02/28 14:23:51 by tchappui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,13 +91,13 @@ void	ft_chekforme(t_data *data)
 			if (data->m.map[0][x] != '1'
 				|| data->m.map[data->m.win_height - 1][x] != '1')
 			{
-				ft_printf("ERROR\nLa map doit etre rectangle et entoure de murs");
+				ft_printf("ERROR\nLa map doit etre rectangle, entouré de murs");
 				ft_freemap(data);
 			}
 			else if (data->m.map[y][0] != '1'
 				|| data->m.map[y][data->m.win_width - 1] != '1')
 			{
-				ft_printf("ERROR\nLa map doit etre rectangle et entoure de murs");
+				ft_printf("ERROR\nLa map doit etre rectangle, entouré de murs");
 				ft_freemap(data);
 			}
 			x++;

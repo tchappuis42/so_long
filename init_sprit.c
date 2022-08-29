@@ -6,7 +6,7 @@
 /*   By: tchappui <tchappui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 15:55:23 by tchappui          #+#    #+#             */
-/*   Updated: 2022/02/18 14:01:10 by tchappui         ###   ########.fr       */
+/*   Updated: 2022/02/28 13:56:52 by tchappui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	ft_wall(t_data *data)
 	int			img_width;
 	int			img_height;
 
-	src = "./xpm/wall.xpm";
+	src = "./xpm/mur.xpm";
 	img = mlx_xpm_file_to_image(data->mlx, src, &img_width, &img_height);
 	data->img.wall = img;
 }

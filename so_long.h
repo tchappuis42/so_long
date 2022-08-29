@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tchappui <tchappui@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tchappui <tchappui@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 15:26:02 by tchappui          #+#    #+#             */
-/*   Updated: 2022/02/18 15:36:37 by tchappui         ###   ########.fr       */
+/*   Updated: 2022/04/06 19:12:36 by tchappui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ int		ft_mapheight(char *map);
 void	ft_makemap(t_data *data);
 
 //fonction pour la gestion d'erreur
-void	ft_errorfd();
+void	ft_errorfd(void);
 void	ft_chekmap(t_data *data, char *map);
 void	ft_chekforme(t_data *data);
 void	ft_chekchar(t_data *data);
